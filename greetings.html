@@ -36,15 +36,16 @@
 
         var today = new Date();
         var hours = today.getHours();
+        var minutes = today.getMinutes();
         var dayOfWeek = weekday[today.getDay()]
         var date = dayOfWeek+" "+today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();
         var greet;
         if (hours < 12)
-            greet = "Bom dia   ";
+            greet = "Bom dia   - "+`${hours}`+":"+`${minutes}`;
         else if (hours >= 12 && hours <= 18)
-            greet = "Boa tarde ";
+            greet = "Boa tarde - "+`${hours}`+":"+`${minutes}`;
         else if (hours >= 18 && hours <= 24)
-            greet = "Boa noite ";
+            greet = "Boa noite - "+`${hours}`+":"+`${minutes}`;
 
         document.getElementById("lbl").innerHTML = 
             greet+=`<div id="date"> É ${date}</div>`;
