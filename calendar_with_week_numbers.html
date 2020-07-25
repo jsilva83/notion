@@ -608,19 +608,44 @@ function fillmcal(yyyy,mm,cform)
       </tr>
     </tbody></table>
      
-<br>
-    <h3>Get week number:</h3>
+    <h6>Get week number:</h6>
     <form>
+        <table>
+            <tr>
+                <th>YYYY</th>
+                <th>MM</th>
+                <th>DD</th>
+            </tr>
+            <tr>
+                <td><input name="y" size="4" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
+                <td><input name="m" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
+                <td><input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>Week day</td>
+                <td>Week number</td>
+            </tr>
+            <tr>
+                <td><input name="str" size="20" type="text" class="flat" readonly=""></td>
+                <td><input name="wday" size="6" type="text" readonly=""></td>
+                <td><input name="wnum" size="2" type="text" readonly=""></td>
+            </tr>
+        </table>    
+
       yyyy-mm-dd: <input name="y" size="4" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> - 
       <input name="m" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> - 
-      <input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"><br> 
+      <input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"><br>
+
       <input value=" today " onclick="today(this.form)" type="button"> 
       <input value=" calculate " onclick="day2date(this.form)" type="button"> 
       <input value=" reset " onclick="resetform1(this.form)" type="button"><br>
+
       <input name="err" size="50" type="text" class="flat" readonly=""><br>
       <input name="str" size="20" type="text" class="flat" readonly=""><br>
       day of week: <input name="wday" size="6" type="text" readonly=""><br>
       iso8601 week number: <input name="wnum" size="2" type="text" readonly="">
+
     </form>
 
     <p class="copy">By Guido Socher, License: GPL, guidosocher at gmail.com, Version: 2009-11-13</p>
