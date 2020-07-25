@@ -605,45 +605,25 @@ function fillmcal(yyyy,mm,cform)
             </tbody></table>
           </form>
         </td>
-
-        <td valign="top">print notes:<br>
-        <textarea cols="25" rows="6" name="printnotes" spellcheck="false" data-ms-editor="true"></textarea>
-        </td>
       </tr>
     </tbody></table>
      
 <br>
-<br>
-<br>
-<br>
-<small>The notes are only temporary but can you print this page together with the notes.</small>
-<br>
-    <h3>Calculate day and week number for a given date</h3>
-
+    <h3>Get week number:</h3>
     <form>
       yyyy-mm-dd: <input name="y" size="4" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> - 
       <input name="m" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> - 
-      <input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> 
+      <input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"><br> 
       <input value=" today " onclick="today(this.form)" type="button"> 
       <input value=" calculate " onclick="day2date(this.form)" type="button"> 
       <input value=" reset " onclick="resetform1(this.form)" type="button"><br>
       <input name="err" size="50" type="text" class="flat" readonly=""><br>
-      result:<br>
       <input name="str" size="20" type="text" class="flat" readonly=""><br>
       day of week: <input name="wday" size="6" type="text" readonly=""><br>
       iso8601 week number: <input name="wnum" size="2" type="text" readonly="">
     </form>
 
-    <h3>Background about ISO 8601</h3>
-    ISO 8601 defines the Week as always starting with Monday. The
-    first week is the week which contains the first Thursday of the
-    calendar year. This implies that it is the week which is mostly
-    within the Calendar year and the week containing January 4th.
-    <br>
-    <p class="copy">
-� Guido Socher, License: GPL, 
-guidosocher at gmail.com, 
-Version: 2009-11-13</p>
+    <p class="copy">By Guido Socher, License: GPL, guidosocher at gmail.com, Version: 2009-11-13</p>
   
 
 
