@@ -610,23 +610,28 @@ function fillmcal(yyyy,mm,cform)
      
     <h6>Get week number:</h6>
     <form>
-        <table>
-            <tr>
+        <table style="border: #111;">
+            <tr style="width: 100px;">
                 <th>YYYY</th>
                 <th>MM</th>
                 <th>DD</th>
             </tr>
-            <tr>
+            <tr style="width: 100px;">
                 <td><input name="y" size="4" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
                 <td><input name="m" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
                 <td><input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
             </tr>
-            <tr>
+            <tr style="width: 100px;">
+                <td><input value=" today " onclick="today(this.form)" type="button"></td>
+                <td><input value=" calculate " onclick="day2date(this.form)" type="button"></td>
+                <td><input value=" reset " onclick="resetform1(this.form)" type="button"></td>
+            </tr>
+            <tr style="width: 100px;">
                 <td>Date</td>
                 <td>Week day</td>
                 <td>Week number</td>
             </tr>
-            <tr>
+            <tr style="width: 100px;">
                 <td><input name="str" size="20" type="text" class="flat" readonly=""></td>
                 <td><input name="wday" size="6" type="text" readonly=""></td>
                 <td><input name="wnum" size="2" type="text" readonly=""></td>
