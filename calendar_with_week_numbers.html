@@ -552,7 +552,6 @@ function fillmcal(yyyy,mm,cform)
 </style></head>
 
   <body onload="javascript:init_settings()" cz-shortcut-listen="true" style="">
-    <h1>calendar with week numbers</h1>
 
     <table border="0" hspace="10" cellpadding="5">
       <tbody><tr>
@@ -594,11 +593,6 @@ function fillmcal(yyyy,mm,cform)
                     <tr id="mcalr5"><td style="color: rgb(0, 0, 0);">35</td><td>&nbsp;</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">24</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">25</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">26</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">27</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">28</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">29</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">30</td></tr>
                     <tr id="mcalr6"><td style="color: rgb(0, 0, 0);">36</td><td>&nbsp;</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">31</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(238, 238, 238);">.</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(238, 238, 238);">.</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(238, 238, 238);">.</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(238, 238, 238);">.</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(238, 238, 238);">.</td><td class="mcal" style="background-color: rgb(255, 255, 255); color: rgb(238, 238, 238);">.</td></tr>
 
-                    <tr>
-                      <td colspan="9"><small><br>
-                      Week numbers according to
-                      iso8601</small></td>
-                    </tr>
                   </tbody></table>
                 </td>
               </tr>
@@ -608,37 +602,9 @@ function fillmcal(yyyy,mm,cform)
       </tr>
     </tbody></table>
      
-    <h6>Get week number:</h6>
+    <h3>Get week number:</h3>
     <form>
-        <table style="border: #111;">
-            <tr style="width: 100px;">
-                <th>YYYY</th>
-                <th>MM</th>
-                <th>DD</th>
-            </tr>
-            <tr style="width: 100px;">
-                <td><input name="y" size="4" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
-                <td><input name="m" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
-                <td><input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"></td>
-            </tr>
-            <tr style="width: 100px;">
-                <td><input value=" today " onclick="today(this.form)" type="button"></td>
-                <td><input value=" calculate " onclick="day2date(this.form)" type="button"></td>
-                <td><input value=" reset " onclick="resetform1(this.form)" type="button"></td>
-            </tr>
-            <tr style="width: 100px;">
-                <td>Date</td>
-                <td>Week day</td>
-                <td>Week number</td>
-            </tr>
-            <tr style="width: 100px;">
-                <td><input name="str" size="20" type="text" class="flat" readonly=""></td>
-                <td><input name="wday" size="6" type="text" readonly=""></td>
-                <td><input name="wnum" size="2" type="text" readonly=""></td>
-            </tr>
-        </table>    
-
-      yyyy-mm-dd: <input name="y" size="4" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> - 
+      yyyy-mm-dd: <input name="y" size="4" type="text" value="2020" class="in" spellcheck="false" data-ms-editor="true"> - 
       <input name="m" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"> - 
       <input name="d" size="2" type="text" value="" class="in" spellcheck="false" data-ms-editor="true"><br>
 
@@ -648,8 +614,8 @@ function fillmcal(yyyy,mm,cform)
 
       <input name="err" size="50" type="text" class="flat" readonly=""><br>
       <input name="str" size="20" type="text" class="flat" readonly=""><br>
-      day of week: <input name="wday" size="6" type="text" readonly=""><br>
-      iso8601 week number: <input name="wnum" size="2" type="text" readonly="">
+      Week day: <input name="wday" size="6" type="text" readonly=""><br>
+      Week number: <input name="wnum" size="2" type="text" readonly="">
 
     </form>
 
